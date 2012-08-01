@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<!--
+#parse("Variable Definitions.php")
+#parse("PHP File Header.php")
+-->
+<config>
+    <modules>
+        <${Package}>
+            <version>0.1.0</version>
+        </${Package}>
+    </modules>
+    <global>
+<!--    
+    <blocks>
+            <${extension_alias}>
+                <class>${Package}_Block</class>
+            </${extension_alias}>
+        </blocks>
+-->        
+<!--
+    	<models>
+            <${extension_alias}>
+                <class>${Package}_Model</class>
+            </${extension_alias}>
+        </models>
+-->
+<!--        
+        <helpers>
+            <${extension_alias}>
+                <class>${Package}_Helper</class>
+            </${extension_alias}>
+        </helpers>
+-->
+<!--
+        <resources>
+            <${extension_alias}_setup>
+                <setup>
+                    <module>${Package}</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </${extension_alias}_setup>
+            <${extension_alias}_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </${extension_alias}_write>
+            <${extension_alias}_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </${extension_alias}_read>
+        </resources>
+-->         
+    </global>
+    <frontend>
+ <!--
+        <routers>
+            <${extension_alias}>
+                <use>standard</use>
+                <args>
+                    <module>${Package}</module>
+                    <frontName>${extension_alias}</frontName>
+                </args>
+            </${extension_alias}>
+        </routers>
+-->
+<!--
+        <translate>
+            <modules>
+                <${Package}>
+                    <files>
+                        <default>${Package}.csv</default>
+                    </files>
+                </${Package}>
+            </modules>
+        </translate>
+-->
+<!--
+          <layout>
+              <updates>
+                  <${extension_alias} module="${Package}">
+                      <file>${extension_alias}.xml</file>
+                  </${extension_alias}>
+              </updates>
+          </layout>
+-->
+    </frontend>
+    <admin>
+ <!--
+        <routers>
+            <${extension_alias}>
+                <use>standard</use>
+                <args>
+                    <module>${Package}</module>
+                    <frontName>${extension_alias}</frontName>
+                </args>
+            </${extension_alias}>
+        </routers>
+-->
+    </admin>
+    <adminhtml>
+<!--
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <${extension_alias} translate="title" module="${Package}">
+                                            <title>Section Extension name</title>
+                                        </${extension_alias}>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+-->
+<!--
+        <translate>
+            <modules>
+                <${Package}>
+                    <files>
+                        <default>${Package}.csv</default>
+                    </files>
+                </${Package}>
+            </modules>
+        </translate>
+-->
+    </adminhtml>
+
+    <default>
+    </default>
+    
+    <crontab>
+        <jobs>
+<!--
+            <jobname>
+                <schedule><cron_expr>*/15 * * * *</cron_expr></schedule>
+                <run><model>${extension_alias}/model_name::actionName</model></run>
+            </jobname>
+-->
+        </jobs>
+    </crontab>
+</config>

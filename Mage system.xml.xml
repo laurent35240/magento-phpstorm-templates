@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<!--
+#parse("Variable Definitions.php")
+#parse("PHP File Header.php")
+-->
+<config>
+    <tabs>
+<!--    
+        <${extension_alias} translate="label" module="${extension_alias}">
+            <label>Customers</label>
+            <sort_order>300</sort_order>
+        </${extension_alias}>
+-->        
+    </tabs>
+    <sections>
+<!--    
+        <${extension_alias} translate="label" module="${extension_alias}">
+            <class>separator-top</class>
+            <label>Customer Configuration</label>
+            <tab>customer</tab>
+            <sort_order>130</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <account_share translate="label">
+                    <label>Account Sharing Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>10</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <scope translate="label">
+                            <label>Share Customer Accounts</label>
+                            <frontend_type>select</frontend_type>
+                            <backend_model>customer/config_share</backend_model>
+                            <source_model>customer/config_share</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </scope>
+                    </fields>
+                </account_share>
+            </groups>
+        </${extension_alias}>
+-->        
+    </sections>
+</config>

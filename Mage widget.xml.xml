@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+#parse("Variable Definitions.php")
+#parse("PHP File Header.php")
+-->
+<widgets>
+<!--
+    <widget_id type="cms/widget_page_link" translate="name description" module="${extension_alias}">
+        <name>Widget Name</name>
+        <description>Widget Description</description>
+        <parameters>
+        </parameters>
+    </widget_id>    
+-->
+</widgets>
